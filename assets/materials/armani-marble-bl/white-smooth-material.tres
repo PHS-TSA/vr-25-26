@@ -1,0 +1,16 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://csj1pjbcaxv54"]
+
+[ext_resource type="Texture2D" uid="uid://cudja33pnaqis" path="res://assets/materials/white-marble-bl/white-marble_albedo.png" id="1_1cc3q"]
+[ext_resource type="Texture2D" uid="uid://d4bstxf5moy8a" path="res://assets/materials/white-marble-bl/white-marble_height.png" id="2_k8a30"]
+[ext_resource type="Texture2D" uid="uid://cip5521t4s2rn" path="res://assets/materials/white-marble-bl/white-marble_metallic.png" id="3_5kfln"]
+[ext_resource type="Texture2D" uid="uid://boqu6xprpe0f6" path="res://assets/materials/white-marble-bl/white-marble_normal-ogl.png" id="4_leuq2"]
+
+[resource]
+albedo_texture = ExtResource("1_1cc3q")
+metallic = 1.0
+metallic_texture = ExtResource("3_5kfln")
+normal_enabled = true
+normal_texture = ExtResource("4_leuq2")
+heightmap_enabled = true
+heightmap_texture = ExtResource("2_k8a30")
+uv1_scale = Vector3(1.5, 1.5, 1.5)

@@ -1,27 +1,18 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://byhtdrottpwa"]
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_fpcch"]
-load_path = "res://.godot/imported/armani-marble_albedo.png-e6b5588a4665846b63f522c46b8026d1.s3tc.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7xwwj"]
-load_path = "res://.godot/imported/armani-marble_height.png-a328a80434a9e47617af9047805cf9a4.s3tc.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_124h0"]
-load_path = "res://.godot/imported/armani-marble_metallic.png-2b66bf36897c185a4a3b15299af7644a.s3tc.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_blflg"]
-load_path = "res://.godot/imported/armani-marble_normal-ogl.png-ea434aa0661a7c76e00a11e900263c0b.s3tc.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ld1yv"]
-load_path = "res://.godot/imported/armani-marble_roughness.png-ba08d9e0a1e55183e972b51d930043e8.s3tc.ctex"
+[ext_resource type="Texture2D" uid="uid://wdih43of3woy" path="res://assets/materials/armani-marble-bl/armani-marble_albedo.png" id="1_v7vi1"]
+[ext_resource type="Texture2D" uid="uid://d3g126gyi32u8" path="res://assets/materials/armani-marble-bl/armani-marble_height.png" id="2_6hd3k"]
+[ext_resource type="Texture2D" uid="uid://dhx7s0481a8d" path="res://assets/materials/armani-marble-bl/armani-marble_metallic.png" id="3_pjdpt"]
+[ext_resource type="Texture2D" uid="uid://uom00qcx4iu0" path="res://assets/materials/armani-marble-bl/armani-marble_normal-ogl.png" id="4_b4rf1"]
+[ext_resource type="Texture2D" uid="uid://cf2f7q50cemkv" path="res://assets/materials/armani-marble-bl/armani-marble_roughness.png" id="5_mcr3h"]
 
 [resource]
-albedo_texture = SubResource("CompressedTexture2D_fpcch")
+albedo_texture = ExtResource("1_v7vi1")
 metallic = 1.0
-metallic_texture = SubResource("CompressedTexture2D_124h0")
-roughness_texture = SubResource("CompressedTexture2D_ld1yv")
+metallic_texture = ExtResource("3_pjdpt")
+roughness_texture = ExtResource("5_mcr3h")
 normal_enabled = true
-normal_texture = SubResource("CompressedTexture2D_blflg")
+normal_texture = ExtResource("4_b4rf1")
 heightmap_enabled = true
-heightmap_texture = SubResource("CompressedTexture2D_7xwwj")
+heightmap_texture = ExtResource("2_6hd3k")
 uv1_scale = Vector3(1.5, 1.5, 1.5)

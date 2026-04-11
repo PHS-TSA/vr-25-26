@@ -26,7 +26,7 @@ func _set_pane(p_no):
 # Main menu
 
 func _on_new_game_btn_pressed():
-	_set_pane(2)
+	GameState.new_game(GameState.GameDifficulty.GAME_NORMAL)
 
 func _on_load_game_btn_pressed():
 	_set_pane(3)

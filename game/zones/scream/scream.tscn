@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://vm423o6hdlya" path="res://components/helpers/zone_switch_area.tscn" id="9_s14hw"]
 [ext_resource type="Script" uid="uid://iun1k6pvauhv" path="res://game/zones/house_interior/catch_player.gd" id="12_8rnsl"]
 [ext_resource type="Texture2D" uid="uid://bqglayu7e6mk" path="res://assets/photos/wood.png" id="12_xcdhm"]
+[ext_resource type="AudioStream" uid="uid://c8blmqyabxyzn" path="res://assets/music/scream-zombie-party-konstantin-garbuzyuk-main-version-28012-01-54.mp3" id="13_scream"]
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_t5w8s"]
 animation = &"Grip"
@@ -583,7 +584,12 @@ environment = SubResource("Environment_dgbbn")
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="World" index="1" unique_id=1137532361]
 transform = Transform3D(-0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, 0.5, -0.5, 0, 8, 0)
 
-[node name="Ground" type="StaticBody3D" parent="World" index="2" unique_id=1522764677]
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="World" index="2" unique_id=3141592653]
+stream = ExtResource("13_scream")
+bus = &"Music"
+autoplay = true
+
+[node name="Ground" type="StaticBody3D" parent="World" index="3" unique_id=1522764677]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="World/Ground" index="0" unique_id=218712413]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0.011544943, 0.009975672, -0.01316309)
@@ -594,7 +600,7 @@ mesh = SubResource("QuadMesh_tg51c")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
 shape = SubResource("BoxShape3D_uk6lx")
 
-[node name="Boundary1" type="StaticBody3D" parent="World" index="3" unique_id=1020251368]
+[node name="Boundary1" type="StaticBody3D" parent="World" index="4" unique_id=1020251368]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -10)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="World/Boundary1" index="0" unique_id=757706365]
@@ -605,7 +611,7 @@ mesh = SubResource("QuadMesh_4uc5b")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="World/Boundary1" index="1" unique_id=1234442921]
 shape = SubResource("BoxShape3D_db0th")
 
-[node name="Boundary2" type="StaticBody3D" parent="World" index="4" unique_id=814577549]
+[node name="Boundary2" type="StaticBody3D" parent="World" index="5" unique_id=814577549]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10, 2, 0)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="World/Boundary2" index="0" unique_id=1171553212]
@@ -616,7 +622,7 @@ mesh = SubResource("QuadMesh_iva63")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="World/Boundary2" index="1" unique_id=483467281]
 shape = SubResource("BoxShape3D_db0th")
 
-[node name="Boundary3" type="StaticBody3D" parent="World" index="5" unique_id=2050913126]
+[node name="Boundary3" type="StaticBody3D" parent="World" index="6" unique_id=2050913126]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 2, 10)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="World/Boundary3" index="0" unique_id=58581957]
@@ -627,7 +633,7 @@ mesh = SubResource("QuadMesh_iva63")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="World/Boundary3" index="1" unique_id=797842279]
 shape = SubResource("BoxShape3D_db0th")
 
-[node name="Boundary4" type="StaticBody3D" parent="World" index="6" unique_id=1549243911]
+[node name="Boundary4" type="StaticBody3D" parent="World" index="7" unique_id=1549243911]
 transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -10, 2, 0)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="World/Boundary4" index="0" unique_id=10425644]

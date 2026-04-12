@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dnt4ej2ol2pfs"
-path="res://.godot/imported/bridge.blend-5dde9845893b02a4f815b7f8acb48c1a.scn"
+uid="uid://dqjod46gwqm5"
+path="res://.godot/imported/Wanderings4+texture.blend-d785e7be264468c249539dcf04deb243.scn"
 
 [deps]
 
-source_file="res://assets/bridge.blend"
-dest_files=["res://.godot/imported/bridge.blend-5dde9845893b02a4f815b7f8acb48c1a.scn"]
+source_file="res://assets/Wanderings4+texture.blend"
+dest_files=["res://.godot/imported/Wanderings4+texture.blend-d785e7be264468c249539dcf04deb243.scn"]
 
 [params]
 

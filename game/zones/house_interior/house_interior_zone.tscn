@@ -291,6 +291,9 @@ environment = ExtResource("2_42k30")
 transform = Transform3D(-0.050092127, 0.8385638, -0.54249567, 0.022187687, 0.5439779, 0.83880615, 0.9984981, 0.029980853, -0.0458548, 0, 8, 0)
 
 [node name="Museum" type="Area3D" parent="World" index="2" unique_id=2000231288]
+collision_layer = 65535
+collision_mask = 65535
+collision_priority = 0.0
 
 [node name="Room" type="MeshInstance3D" parent="World/Museum" index="0" unique_id=1109526643]
 mesh = ExtResource("4_7bru3")

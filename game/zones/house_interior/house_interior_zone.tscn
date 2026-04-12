@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bwc0uhekndavd" path="res://assets/window.blend" id="4_nk0ar"]
 [ext_resource type="Texture2D" uid="uid://cgltyfefgrt57" path="res://assets/materials/stucco1_bl/stucco1_ao.png" id="4_r27xb"]
 [ext_resource type="Texture2D" uid="uid://d1fu1650lpgnr" path="res://assets/materials/stucco1_bl/stucco1_albedo.png" id="5_318x7"]
-[ext_resource type="Material" path="res://assets/materials/white-marble-bl/white-smooth-material.tres" id="5_dlysg"]
+[ext_resource type="Material" uid="uid://csj1pjbcaxv54" path="res://assets/materials/white-marble-bl/white-smooth-material.tres" id="5_dlysg"]
 [ext_resource type="Texture2D" uid="uid://drviyoqmdjb2e" path="res://assets/landscape.jpg" id="5_lofet"]
 [ext_resource type="Texture2D" uid="uid://c04cuwxic17ma" path="res://assets/materials/stucco1_bl/stucco1_Roughness.png" id="6_qjplw"]
 [ext_resource type="Texture2D" uid="uid://xjg56pke40fx" path="res://assets/outside.jpg" id="6_wxful"]
@@ -22,7 +22,7 @@
 [ext_resource type="Texture2D" uid="uid://d1qufjbadkh48" path="res://assets/photos/impressionsunrise.jpg" id="15_784yq"]
 [ext_resource type="Texture2D" uid="uid://dnvb6w7cdh84t" path="res://assets/materials/door/Door_Default_Albedo.png" id="21_dlysg"]
 [ext_resource type="Texture2D" uid="uid://deblpjtt7ibhu" path="res://assets/materials/door/Door_Default_Normal.png" id="22_qjo1u"]
-[ext_resource type="Script" uid="uid://iun1k6pvauhv" path="res://game/zones/house_interior/catch_player.gd" id="23_qjo1u"]
+[ext_resource type="Script" path="res://game/zones/house_interior/catch_player.gd" id="23_qjo1u"]
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_qjo1u"]
 animation = &"Grip"

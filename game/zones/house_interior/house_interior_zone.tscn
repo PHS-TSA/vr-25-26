@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bwc0uhekndavd" path="res://assets/window.blend" id="4_nk0ar"]
 [ext_resource type="Texture2D" uid="uid://cgltyfefgrt57" path="res://assets/materials/stucco1_bl/stucco1_ao.png" id="4_r27xb"]
 [ext_resource type="Texture2D" uid="uid://d1fu1650lpgnr" path="res://assets/materials/stucco1_bl/stucco1_albedo.png" id="5_318x7"]
-[ext_resource type="Material" uid="uid://csj1pjbcaxv54" path="res://assets/materials/white-marble-bl/white-smooth-material.tres" id="5_dlysg"]
+[ext_resource type="Material" path="res://assets/materials/white-marble-bl/white-smooth-material.tres" id="5_dlysg"]
 [ext_resource type="Texture2D" uid="uid://drviyoqmdjb2e" path="res://assets/landscape.jpg" id="5_lofet"]
 [ext_resource type="Texture2D" uid="uid://c04cuwxic17ma" path="res://assets/materials/stucco1_bl/stucco1_Roughness.png" id="6_qjplw"]
 [ext_resource type="Texture2D" uid="uid://xjg56pke40fx" path="res://assets/outside.jpg" id="6_wxful"]
@@ -22,7 +22,7 @@
 [ext_resource type="Texture2D" uid="uid://d1qufjbadkh48" path="res://assets/photos/impressionsunrise.jpg" id="15_784yq"]
 [ext_resource type="Texture2D" uid="uid://dnvb6w7cdh84t" path="res://assets/materials/door/Door_Default_Albedo.png" id="21_dlysg"]
 [ext_resource type="Texture2D" uid="uid://deblpjtt7ibhu" path="res://assets/materials/door/Door_Default_Normal.png" id="22_qjo1u"]
-[ext_resource type="Script" path="res://game/zones/house_interior/catch_player.gd" id="23_qjo1u"]
+[ext_resource type="Script" uid="uid://iun1k6pvauhv" path="res://game/zones/house_interior/catch_player.gd" id="23_qjo1u"]
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_qjo1u"]
 animation = &"Grip"
@@ -263,7 +263,7 @@ transform = Transform3D(-0.050092127, 0.8385638, -0.54249567, 0.022187687, 0.543
 
 [node name="Museum" type="StaticBody3D" parent="World" index="2" unique_id=2000231288]
 collision_layer = 65535
-collision_mask = 65535
+collision_mask = 589823
 collision_priority = 0.0
 
 [node name="Room" type="MeshInstance3D" parent="World/Museum" index="0" unique_id=1109526643]
@@ -400,6 +400,7 @@ shape = SubResource("BoxShape3D_qjo1u")
 
 [node name="SafetyNet" type="Area3D" parent="." index="7" unique_id=1515887110]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.6324887, 0)
+collision_mask = 524289
 script = ExtResource("23_qjo1u")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="SafetyNet" index="0" unique_id=829639481]

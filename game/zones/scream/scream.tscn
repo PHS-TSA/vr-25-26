@@ -572,6 +572,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 7.6)
 
 [node name="Bridge" type="StaticBody3D" parent="." index="5" unique_id=1483147587]
 transform = Transform3D(-0.00574135, 0, 0.19991754, 0, 0.2, 0, -0.19991754, 0, -0.00574135, 0, 0.218, 0.815)
+collision_layer = 65535
+collision_mask = 589823
+collision_priority = 0.0
 
 [node name="Cube" type="MeshInstance3D" parent="Bridge" index="0" unique_id=638590455]
 transform = Transform3D(69.38574, 0, -2.9802322e-08, 0, 0.9999997, 0, 0, 0, 4.4638124, 21.75066, -0.1287365, -0.0018327236)
@@ -665,6 +668,8 @@ shape = SubResource("ConcavePolygonShape3D_n6nuf")
 
 [node name="SafetyNet" type="Area3D" parent="." index="6" unique_id=465160571]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.6324887, 0)
+collision_mask = 589823
+collision_priority = 0.0
 script = ExtResource("12_8rnsl")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="SafetyNet" index="0" unique_id=1957887277]

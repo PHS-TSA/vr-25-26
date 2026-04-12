@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://cvn48xcmsmkrb" path="res://game/zones/zone_base.tscn" id="1_1fqdh"]
 [ext_resource type="Resource" uid="uid://do2msnxsp08af" path="res://game/zones/wanderer/wanderer.tres" id="2_d5ga5"]
-[ext_resource type="Texture2D" uid="uid://bspb74g7pnfll" path="res://assets/photos/screamsky.png" id="3_ool0y"]
+[ext_resource type="Texture2D" uid="uid://c1uhvilpfctrt" path="res://assets/wandsky.png" id="3_1sh2o"]
 [ext_resource type="Material" uid="uid://bo4o75dhk2brp" path="res://assets/materials/cliff.tres" id="7_tbryc"]
 [ext_resource type="Script" uid="uid://iun1k6pvauhv" path="res://game/zones/house_interior/catch_player.gd" id="8_1sh2o"]
 [ext_resource type="Material" uid="uid://byhtdrottpwa" path="res://assets/materials/armani-marble-bl/armani-material.tres" id="8_bqbuo"]
@@ -71,11 +71,11 @@ nodes/Trigger/node = SubResource("AnimationNodeBlend2_8mbha")
 nodes/Trigger/position = Vector2(-360, 40)
 node_connections = [&"output", 0, &"Grip", &"Grip", 0, &"Trigger", &"Grip", 1, &"ClosedHand2", &"Trigger", 0, &"OpenHand", &"Trigger", 1, &"ClosedHand1"]
 
-[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_xcdhm"]
-panorama = ExtResource("3_ool0y")
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_swvij"]
+panorama = ExtResource("3_1sh2o")
 
 [sub_resource type="Sky" id="Sky_xcdhm"]
-sky_material = SubResource("PanoramaSkyMaterial_xcdhm")
+sky_material = SubResource("PanoramaSkyMaterial_swvij")
 
 [sub_resource type="Environment" id="Environment_dgbbn"]
 background_mode = 2
@@ -84,6 +84,7 @@ fog_enabled = true
 fog_light_color = Color(0.46204412, 0.5580824, 0.6854271, 1)
 fog_light_energy = 1.62
 fog_density = 0.0355
+fog_sky_affect = 0.886
 
 [sub_resource type="BoxMesh" id="BoxMesh_tq4y1"]
 material = ExtResource("9_nqs2p")

@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="PersistentZoneInfo" format=3 uid="uid://bpjd5dsprksja"]
+
+[ext_resource type="Script" uid="uid://diipcou46cwqh" path="res://components/persistent/persistent_zone_info.gd" id="1_ey0ol"]
+
+[resource]
+script = ExtResource("1_ey0ol")
+zone_id = "zone_sunrise"
+instance_scene = "uid://dexs2ehvrx6o2"

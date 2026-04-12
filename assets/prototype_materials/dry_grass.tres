@@ -1,8 +1,7 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://cqs6que52ytcg"]
 
-[ext_resource type="Texture2D" uid="uid://b28f4me1ublg4" path="res://assets/prototype_materials/pattern.png" id="1_xek8q"]
+[ext_resource type="Texture2D" uid="uid://uom00qcx4iu0" path="res://assets/materials/armani-marble-bl/armani-marble_normal-ogl.png" id="1_c6vj2"]
 
 [resource]
-albedo_color = Color(0.619608, 0.635294, 0.419608, 1)
-albedo_texture = ExtResource("1_xek8q")
+albedo_texture = ExtResource("1_c6vj2")
 uv1_triplanar = true

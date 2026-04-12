@@ -10,6 +10,7 @@
 [ext_resource type="Script" uid="uid://3mruuocqan0f" path="res://game/objects/swim/swim_area.gd" id="9_frex6"]
 [ext_resource type="PackedScene" uid="uid://vm423o6hdlya" path="res://components/helpers/zone_switch_area.tscn" id="9_lja2d"]
 [ext_resource type="Shader" uid="uid://wax3uiyvuuj" path="res://game/objects/swim/water_shader.gdshader" id="10_xfar7"]
+[ext_resource type="PackedScene" uid="uid://kyhaogt0a4q8" path="res://addons/godot-xr-tools/functions/movement_flight.tscn" id="11_swimf"]
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_frex6"]
 animation = &"Grip"
@@ -167,6 +168,10 @@ tree_root = SubResource("AnimationNodeBlendTree_i1n0u")
 
 [node name="Boat" parent="XROrigin3D" parent_id_path=PackedInt32Array(1749388863) index="5" unique_id=1415172022 instance=ExtResource("3_frex6")]
 transform = Transform3D(-2.1855694e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.1855694e-08, -2, 0.2, -1)
+
+[node name="MovementFlight" parent="XROrigin3D" parent_id_path=PackedInt32Array(1749388863) index="6" unique_id=214454952 instance=ExtResource("11_swimf")]
+flight_button = "none"
+speed_scale = 3.0
 
 [node name="World" type="Node3D" parent="." index="1" unique_id=1465141923]
 

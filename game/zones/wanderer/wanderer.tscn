@@ -207,7 +207,7 @@ shape = SubResource("BoxShape3D_g8b71")
 [node name="FromHouseInterior" type="Marker3D" parent="." index="4" unique_id=1702919878]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.2421527, 1.6923628)
 
-[node name="Wanderings4+texture" type="Area3D" parent="." index="5" unique_id=576594412]
+[node name="Wanderings4+texture" type="StaticBody3D" parent="." index="5" unique_id=1147842781]
 
 [node name="Cube" type="MeshInstance3D" parent="Wanderings4+texture" index="0" unique_id=1829676356]
 mesh = SubResource("ArrayMesh_w5hdm")
@@ -216,7 +216,7 @@ surface_material_override/0 = ExtResource("7_tbryc")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Wanderings4+texture" index="1" unique_id=596711415]
 shape = SubResource("ConcavePolygonShape3D_1sh2o")
 
-[node name="Wanderings4+texture2" type="Area3D" parent="." index="6" unique_id=1127721803]
+[node name="Wanderings4+texture2" type="StaticBody3D" parent="." index="6" unique_id=457661750]
 transform = Transform3D(-0.45335278, 0, -0.8913312, 0, 1, 0, 0.8913312, 0, -0.45335278, -21.020903, -1.3019457, -29.162203)
 
 [node name="Cube" type="MeshInstance3D" parent="Wanderings4+texture2" index="0" unique_id=1053805390]
@@ -228,7 +228,7 @@ surface_material_override/0 = ExtResource("7_tbryc")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.021205902, 0, 0.02854538)
 shape = SubResource("ConcavePolygonShape3D_1sh2o")
 
-[node name="Wanderings4+texture3" type="Area3D" parent="." index="7" unique_id=891606817]
+[node name="Wanderings4+texture3" type="StaticBody3D" parent="." index="7" unique_id=425034235]
 transform = Transform3D(0.99106956, 0, 0.13334638, 0.03460924, 0.9657313, -0.25722605, -0.12877677, 0.2595439, 0.9571069, 12.254881, -1.3019457, -64.91039)
 
 [node name="Cube" type="MeshInstance3D" parent="Wanderings4+texture3" index="0" unique_id=1226778662]
@@ -239,7 +239,7 @@ surface_material_override/0 = ExtResource("7_tbryc")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.021205902, 0, 0.02854538)
 shape = SubResource("ConcavePolygonShape3D_1sh2o")
 
-[node name="Wanderings4+texture4" type="Area3D" parent="." index="8" unique_id=334826633]
+[node name="Wanderings4+texture4" type="StaticBody3D" parent="." index="8" unique_id=1287394266]
 transform = Transform3D(0.43565455, -0.39519936, -0.80871665, 0.46680033, 0.86739427, -0.17240904, 0.769612, -0.30239838, 0.56236327, 39.23033, -1.3019457, -0.5260086)
 
 [node name="Cube" type="MeshInstance3D" parent="Wanderings4+texture4" index="0" unique_id=176522533]
@@ -250,7 +250,7 @@ surface_material_override/0 = ExtResource("7_tbryc")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.021205902, 0, 0.02854538)
 shape = SubResource("ConcavePolygonShape3D_1sh2o")
 
-[node name="Wanderings4+texture6" type="Area3D" parent="." index="9" unique_id=1441499418]
+[node name="Wanderings4+texture6" type="StaticBody3D" parent="." index="9" unique_id=1627015553]
 transform = Transform3D(0.95303756, 0, -0.30285227, 0, 1, 0, 0.30285227, 0, 0.95303756, 6.8190928, -1.3019457, 32.297653)
 
 [node name="Cube" type="MeshInstance3D" parent="Wanderings4+texture6" index="0" unique_id=1337794786]
@@ -262,7 +262,7 @@ surface_material_override/0 = ExtResource("7_tbryc")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.021205902, 0, 0.02854538)
 shape = SubResource("ConcavePolygonShape3D_1sh2o")
 
-[node name="Wanderings4+texture7" type="Area3D" parent="." index="10" unique_id=533076219]
+[node name="Wanderings4+texture7" type="StaticBody3D" parent="." index="10" unique_id=1546754406]
 transform = Transform3D(-0.2877459, 0.2561104, 0.9228271, 0.03460924, 0.9657313, -0.25722605, -0.95708126, -0.042077392, -0.286749, -33.850872, -1.3019457, 22.388021)
 
 [node name="Cube" type="MeshInstance3D" parent="Wanderings4+texture7" index="0" unique_id=951599980]

@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="PersistentZoneInfo" format=3 uid="uid://b2bbs2nsysgok"]
+
+[ext_resource type="Script" uid="uid://diipcou46cwqh" path="res://components/persistent/persistent_zone_info.gd" id="1_r1t6q"]
+
+[resource]
+script = ExtResource("1_r1t6q")
+zone_id = "scream"
+instance_scene = "res://game/zones/scream/scream.tscn"

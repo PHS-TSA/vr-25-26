@@ -1,0 +1,13 @@
+[gd_resource type="ORMMaterial3D" format=3 uid="uid://eshqp6k2amob"]
+
+[ext_resource type="Texture2D" uid="uid://bhpdd7yvs2q15" path="res://assets/materials/streaky-plywood-bl/streaky-plywood_albedo.png" id="1_j2vhb"]
+[ext_resource type="Texture2D" uid="uid://c0k0m7yof6g41" path="res://assets/materials/streaky-plywood-bl/streaky-plywood_height.png" id="2_fp37b"]
+[ext_resource type="Texture2D" uid="uid://ruvs63ixnxde" path="res://assets/materials/streaky-plywood-bl/streaky-plywood_normal-ogl.png" id="3_dduir"]
+
+[resource]
+albedo_texture = ExtResource("1_j2vhb")
+normal_enabled = true
+normal_texture = ExtResource("3_dduir")
+heightmap_enabled = true
+heightmap_texture = ExtResource("2_fp37b")
+uv1_scale = Vector3(1, 30, 1)

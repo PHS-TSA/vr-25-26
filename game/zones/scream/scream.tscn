@@ -560,11 +560,11 @@ mesh = SubResource("BoxMesh_tq4y1")
 shape = SubResource("BoxShape3D_dvkw1")
 
 [node name="EnterHouse" parent="." index="3" unique_id=787394779 instance=ExtResource("9_s14hw")]
-zone_scene = "res://game/zones/house_interior/house_interior_zone.tscn"
+zone_scene = "uid://bsb7i42nbkdp2"
 spawn_node_name = "FromBackYard"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="EnterHouse" index="0" unique_id=1413557159]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 8.7)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 1.5, 8.7)
 shape = SubResource("BoxShape3D_g8b71")
 
 [node name="FromHouseInterior" type="Marker3D" parent="." index="4" unique_id=1702919878]

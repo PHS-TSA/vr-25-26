@@ -5,12 +5,16 @@
 [ext_resource type="Material" uid="uid://c7prktlpm7tmm" path="res://assets/prototype_materials/forest.tres" id="3_wfk2d"]
 [ext_resource type="Resource" uid="uid://to5lown6orfd" path="res://game/zones/outside/outside_zone_info.tres" id="3_wyepd"]
 [ext_resource type="Script" uid="uid://d0bvs2b3oa3q7" path="res://components/helpers/scatter.gd" id="4_v2d8i"]
+[ext_resource type="Texture2D" uid="uid://8tdqn50lx6ja" path="res://assets/materials/whispy-grass-meadow-bl/wispy-grass-meadow_albedo.png" id="5_gfaum"]
 [ext_resource type="Material" uid="uid://cjylinr1vdjcw" path="res://assets/prototype_materials/dark_brown.tres" id="5_peq87"]
+[ext_resource type="Texture2D" uid="uid://bdri71rvtd0c2" path="res://assets/materials/whispy-grass-meadow-bl/wispy-grass-meadow_height.png" id="6_mpg1a"]
 [ext_resource type="Material" uid="uid://ccdofvku4c7w3" path="res://assets/prototype_materials/stone_grey.tres" id="6_y2a7s"]
+[ext_resource type="Texture2D" uid="uid://bp72ovtyio3g2" path="res://assets/materials/whispy-grass-meadow-bl/wispy-grass-meadow_normal-ogl.png" id="7_airyt"]
 [ext_resource type="PackedScene" uid="uid://vm423o6hdlya" path="res://components/helpers/zone_switch_area.tscn" id="7_omnq0"]
 [ext_resource type="Material" uid="uid://byhtdrottpwa" path="res://assets/materials/armani-marble-bl/armani-material.tres" id="8_2oy5v"]
 [ext_resource type="Environment" uid="uid://er867l7dl10j" path="res://default_env.tres" id="8_82q6b"]
 [ext_resource type="Material" uid="uid://bo4o75dhk2brp" path="res://assets/materials/cliff.tres" id="8_vljgg"]
+[ext_resource type="Material" uid="uid://tn30twknl3hx" path="res://assets/materials/bush.tres" id="9_qeajv"]
 [ext_resource type="PackedScene" uid="uid://c4rpcr7s5pt3v" path="res://game/items/rock/rock.tscn" id="12_cxbia"]
 [ext_resource type="PackedScene" uid="uid://chch4r7wddwdj" path="res://game/objects/storage/storage_box.tscn" id="13_galon"]
 [ext_resource type="PackedScene" uid="uid://dbepe4i2q62yy" path="res://game/items/crate/crate.tscn" id="13_mtgv7"]
@@ -81,6 +85,15 @@ node_connections = [&"output", 0, &"Grip", &"Grip", 0, &"Trigger", &"Grip", 1, &
 [sub_resource type="QuadMesh" id="QuadMesh_0144s"]
 material = ExtResource("2_uryyw")
 size = Vector2(20, 20)
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_rejpy"]
+albedo_texture = ExtResource("5_gfaum")
+normal_enabled = true
+normal_scale = 16.0
+normal_texture = ExtResource("7_airyt")
+heightmap_enabled = true
+heightmap_scale = 0.429
+heightmap_texture = ExtResource("6_mpg1a")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ivc2m"]
 size = Vector3(20, 1, 20)
@@ -169,6 +182,7 @@ transform = Transform3D(-0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="World/Ground" index="0" unique_id=1414681629]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
 mesh = SubResource("QuadMesh_0144s")
+surface_material_override/0 = SubResource("ORMMaterial3D_rejpy")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="World/Ground" index="1" unique_id=1511813166]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
@@ -180,6 +194,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -10)
 [node name="MeshInstance3D" type="MeshInstance3D" parent="World/Boundary1" index="0" unique_id=1127894707]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.5)
 mesh = SubResource("QuadMesh_mq77n")
+surface_material_override/0 = ExtResource("9_qeajv")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="World/Boundary1" index="1" unique_id=912460372]
 shape = SubResource("BoxShape3D_cvifd")
@@ -190,6 +205,7 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10, 2,
 [node name="MeshInstance3D" type="MeshInstance3D" parent="World/Boundary2" index="0" unique_id=1701129750]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.5)
 mesh = SubResource("QuadMesh_mq77n")
+surface_material_override/0 = ExtResource("9_qeajv")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="World/Boundary2" index="1" unique_id=775958622]
 shape = SubResource("BoxShape3D_cvifd")
@@ -200,6 +216,7 @@ transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 2, 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="World/Boundary3" index="0" unique_id=1416063355]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.5)
 mesh = SubResource("QuadMesh_mq77n")
+surface_material_override/0 = ExtResource("9_qeajv")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="World/Boundary3" index="1" unique_id=377827581]
 shape = SubResource("BoxShape3D_cvifd")
@@ -210,6 +227,7 @@ transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -10, 2, 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="World/Boundary4" index="0" unique_id=1208103697]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.5)
 mesh = SubResource("QuadMesh_mq77n")
+surface_material_override/0 = ExtResource("9_qeajv")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="World/Boundary4" index="1" unique_id=1347159237]
 shape = SubResource("BoxShape3D_cvifd")

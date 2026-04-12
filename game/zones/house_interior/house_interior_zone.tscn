@@ -370,6 +370,7 @@ surface_material_override/0 = SubResource("ORMMaterial3D_m02e4")
 
 [node name="ToOutside" parent="." index="2" unique_id=1734369285 instance=ExtResource("7_jpwgk")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -9.657151, 0, -0.024721622)
+collision_mask = 524289
 zone_scene = "res://game/zones/outside/outside_zone.tscn"
 spawn_node_name = "FromHouseInterior"
 

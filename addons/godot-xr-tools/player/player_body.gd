@@ -258,9 +258,12 @@ func set_enabled(new_value) -> void:
 		_update_enabled()
 
 func _update_enabled() -> void:
-	# Update collision_shape
 	if _collision_node:
 		_collision_node.disabled = !enabled
+	if enabled:
+		set_physics_process(true)
+	else:
+		set_physics_process(false)
 
 	# Update physics processing
 	if enabled:
@@ -435,12 +438,12 @@ func move_player(p_velocity: Vector3) -> Vector3:
 
 	if not _in_physics_movement:
 		# Apply the player-body movement to the XR origin
-		var movement := global_transform.origin - transform_before_movement.origin
-		origin_node.global_transform.origin += movement
-
-		var delta_transform : Transform3D = global_transform * transform_before_movement.inverse()
-		if delta_transform.origin.length() >  0.001:
-			player_moved.emit(delta_transform)
+		if not _in_physics_movement:
+			var movement := global_transform.origin - transform_before_movement.origin
+			origin_node.global_transform.origin += movement
+			var delta_transform : Transform3D = global_transform * transform_before_movement.inverse()
+			if delta_transform.origin.length() > 0.001:
+				player_moved.emit(delta_transform)
 
 	# Check if we collided with rigid bodies and apply impulses to them to move them out of the way
 	if push_rigid_bodies:
@@ -498,7 +501,7 @@ func slew_up(up: Vector3, slew: float) -> void:
 
 	# Save the player foot global and local positions
 	var ref_pos_global := global_position
-	var ref_pos_local : Vector3 = ref_pos_global * current_origin
+	var ref_pos_local : Vector3 = current_origin.inverse() * ref_pos_global
 
 	# Calculate the target origin
 	var target_origin := current_origin

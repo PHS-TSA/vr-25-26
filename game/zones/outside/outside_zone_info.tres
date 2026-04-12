@@ -5,4 +5,4 @@
 [resource]
 script = ExtResource("1_ebey5")
 zone_id = "zone_outside"
-instance_scene = "res://game/zones/outside/outside_zone.tscn"
+instance_scene = "uid://cjat5u6nsihgw"

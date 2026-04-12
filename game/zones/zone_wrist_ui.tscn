@@ -19,11 +19,6 @@ layout_mode = 2
 theme_override_constants/separation = 10
 alignment = 1
 
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer" unique_id=761700772]
-layout_mode = 2
-text = "This display shows the wrist UI when playing the game. Customize this for your games content or theme."
-autowrap_mode = 2
-
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=176801731]
 layout_mode = 2
 theme_override_constants/separation = 50

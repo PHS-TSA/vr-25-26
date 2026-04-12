@@ -13,7 +13,6 @@ func _ready():
 
 func _set_pane(p_no):
 	$MainMenu.visible = p_no == 1
-	$Options.visible = p_no == 2
 
 func _on_exit_btn_pressed():
 	get_tree().quit()

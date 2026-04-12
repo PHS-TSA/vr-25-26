@@ -6,8 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="4_7pgy0"]
 [ext_resource type="PackedScene" uid="uid://l2n30mpbkdyw" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/right_hand_low.tscn" id="5_5cr7c"]
 [ext_resource type="PackedScene" uid="uid://cl8q8f32imusk" path="res://game/start_scene/start_ui.tscn" id="5_grt1o"]
-[ext_resource type="Material" uid="uid://d07lc0l502lsk" path="res://assets/materials/armani-marble-bl/white-material.tres" id="5_o3q1p"]
-[ext_resource type="Material" uid="uid://csj1pjbcaxv54" path="res://assets/materials/armani-marble-bl/white-smooth-material.tres" id="6_b2itm"]
+[ext_resource type="Material" uid="uid://d07lc0l502lsk" path="res://assets/materials/white-marble-bl/white-material.tres" id="5_o3q1p"]
+[ext_resource type="Material" uid="uid://csj1pjbcaxv54" path="res://assets/materials/white-marble-bl/white-smooth-material.tres" id="6_b2itm"]
 
 [sub_resource type="Environment" id="Environment_oplr7"]
 ambient_light_source = 1

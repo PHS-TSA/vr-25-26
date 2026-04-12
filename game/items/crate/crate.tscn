@@ -2,14 +2,14 @@
 
 [ext_resource type="PackedScene" uid="uid://cc2akik80xtnb" path="res://components/persistent/persistent_item.tscn" id="1_j3qg2"]
 [ext_resource type="Resource" uid="uid://dag4mhfys4x5d" path="res://game/items/crate/crate_type.tres" id="2_26s4t"]
-[ext_resource type="Material" uid="uid://c386ygo86nqfc" path="res://assets/prototype_materials/wood_brown.tres" id="3_3s4ke"]
+[ext_resource type="Material" uid="uid://d07lc0l502lsk" path="res://assets/materials/white-marble-bl/white-material.tres" id="3_j8ysn"]
 [ext_resource type="PackedScene" uid="uid://c25yxb0vt53vc" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_hand_left.tscn" id="4_6v1fn"]
 [ext_resource type="PackedScene" uid="uid://ctw7nbntd5pcj" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_hand_right.tscn" id="5_hu3nh"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_54n81"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_6eydf"]
-material = ExtResource("3_3s4ke")
+material = ExtResource("3_j8ysn")
 
 [node name="Crate" unique_id=1090812438 instance=ExtResource("1_j3qg2")]
 item_id = "crate_"

@@ -25,10 +25,6 @@ XRToolsRumbleManager="*uid://by853dk86g1qw"
 
 enabled=PackedStringArray("res://addons/godot-xr-tools/plugin.cfg")
 
-[filesystem]
-
-import/blender/enabled=false
-
 [godot_xr_tools]
 
 input/default_snap_turning=false

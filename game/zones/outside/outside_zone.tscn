@@ -242,7 +242,8 @@ shape = SubResource("ConvexPolygonShape3D_f4wyk")
 
 [node name="SafetyNet" type="Area3D" parent="World" index="10" unique_id=1725830500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.6324887, 0)
-collision_mask = 524289
+collision_mask = 589823
+collision_priority = 0.0
 script = ExtResource("13_mpg1a")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="World/SafetyNet" index="0" unique_id=55168403]

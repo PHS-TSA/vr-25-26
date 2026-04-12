@@ -255,6 +255,8 @@ shape = SubResource("ConcavePolygonShape3D_1sh2o")
 
 [node name="SafetyNet" type="Area3D" parent="." index="11" unique_id=846156209]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.6324887, 0)
+collision_mask = 589823
+collision_priority = 0.0
 script = ExtResource("8_1sh2o")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="SafetyNet" index="0" unique_id=1539481474]

@@ -88,9 +88,9 @@ func _ready():
 
 
 # Perform sprinting
-func physics_movement(_delta: float, _player_body: XRToolsPlayerBody, disabled: bool):
+func physics_movement(_delta: float, _player_body: XRToolsPlayerBody, exclusive: bool):
 	# Skip if the controller isn't active or is not enabled
-	if !_controller.get_is_active() or disabled == true or !enabled:
+	if !_controller.get_is_active() or exclusive == true or !enabled:
 		set_sprinting(false)
 		return
 

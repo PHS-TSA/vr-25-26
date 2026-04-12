@@ -8,6 +8,7 @@
 [ext_resource type="Material" uid="uid://byhtdrottpwa" path="res://assets/materials/armani-marble-bl/armani-material.tres" id="8_bqbuo"]
 [ext_resource type="Material" uid="uid://cjylinr1vdjcw" path="res://assets/prototype_materials/dark_brown.tres" id="9_nqs2p"]
 [ext_resource type="PackedScene" uid="uid://vm423o6hdlya" path="res://components/helpers/zone_switch_area.tscn" id="10_6hrr7"]
+[ext_resource type="AudioStream" uid="uid://c8blmqyaxyza" path="res://assets/music/wanderer-la-cave-dominique-charpentier-main-version-19249-03-01.mp3" id="11_wanderer"]
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_1sh2o"]
 animation = &"Grip"
@@ -155,6 +156,11 @@ environment = SubResource("Environment_dgbbn")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="World" index="1" unique_id=1137532361]
 transform = Transform3D(-0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, 0.5, -0.5, 0, 8, 0)
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="World" index="2" unique_id=3141592654]
+stream = ExtResource("11_wanderer")
+bus = &"Music"
+autoplay = true
 
 [node name="HouseEntrance" type="Node3D" parent="." index="2" unique_id=1814042211]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 1.664, 4.387439)
